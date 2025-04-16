@@ -12,7 +12,7 @@ import Scarle from '../images/AR/Scarle.jpg';
 
 /*Sniper */
 import AWM from  '../images/Sniper/AWM.jpg';
-import KAr98 from '../images/Sniper/Kar98.jpg';
+import KAr98 from '../images/Sniper/KAr98.jpg';
 import M24 from '../images/Sniper/M24.jpg'; 
 import MUTE from '../images/Sniper/MUTE.jpg';
 import TRG from '../images/Sniper/TRG.jpg';
