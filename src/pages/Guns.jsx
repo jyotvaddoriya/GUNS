@@ -8,7 +8,7 @@ import GPI from '../images/AR/GPI.jpg';
 import M4 from '../images/AR/M4.jpg';
 import M16 from '../images/AR/M16.jpg';
 import M762 from '../images/AR/M762.jpg';
-import Scarle from '../images/AR/scarle.jpg';
+import Scarle from '../images/AR/Scarle.jpg';
 
 /*Sniper */
 import AWM from  '../images/Sniper/AWM.jpg';
