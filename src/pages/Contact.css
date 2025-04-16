@@ -1,0 +1,130 @@
+.contact-page {
+  background-image: url('src/images/contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: white;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .contact-btn {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+}

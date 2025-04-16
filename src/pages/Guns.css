@@ -1,0 +1,166 @@
+.guns-container {
+    padding: 50px 20px;
+    background-color: #111;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .guns-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .guns-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 30px;
+  }
+  
+  
+  /* Infinite scroll wrapper */
+  .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Animate this container */
+  .guns-slider {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollSlider 20s linear infinite;
+  }
+  
+  /* Animation keyframes */
+  @keyframes scrollSlider {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Gun card styles */
+  .gun-card {
+    min-width: 250px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .gun-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gun-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .gun-name {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  
+  .gun-price {
+    color: #4caf50;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .gun-btn {
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .gun-btn:hover {
+    background-color: white;
+    color: #4caf50;
+  }
+  
+  /* Optional: pause animation on hover */
+  .slider-wrapper:hover .guns-slider {
+    animation-play-state: paused;
+  }
+  
+
+  @media (max-width: 768px) {
+    .guns-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .guns-subtitle {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .guns-slider {
+      gap: 15px;
+    }
+  
+    .gun-card {
+      min-width: 180px;
+    }
+  
+    .gun-name {
+      font-size: 1.1rem;
+    }
+  
+    .gun-price {
+      font-size: 0.9rem;
+    }
+  
+    .gun-btn {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gun-card {
+      min-width: 160px;
+    }
+  
+    .gun-image {
+      height: 150px;
+    }
+  
+    .guns-title {
+      font-size: 1.5rem;
+    }
+  
+    .guns-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .gun-name {
+      font-size: 1rem;
+    }
+  
+    .gun-price {
+      font-size: 0.85rem;
+    }
+  
+    .gun-btn {
+      padding: 5px 10px;
+      font-size: 0.85rem;
+    }
+  }
+  

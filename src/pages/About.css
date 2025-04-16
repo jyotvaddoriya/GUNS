@@ -1,0 +1,60 @@
+.about-page {
+  background-image: url('src/images/about.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 30px 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+}
